@@ -309,9 +309,22 @@ header{
     object-fit: contain;
     height: 100%;
     width: 100%;
+    opacity: 0;
     animation:
-        map 4s;
+        map 4s infinite;
 }
+.map-img-store{
+    height: 80%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    opacity: 0;
+    animation: 
+        store 4s infinite;
+}
+
 .nobita-img{
     height: 40%;
     position: absolute;
@@ -330,12 +343,25 @@ header{
     text-align: center;
     padding-top: 3%;
     opacity: 0;
-
     animation:
-        nobita-text 4s infinite;
+    map 4s infinite;
 }
 @keyframes map {
     0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes store {
+    0%{
+        opacity: 0;
+    }
+    50%{
         opacity: 0;
     }
     100%{
@@ -350,16 +376,6 @@ header{
     }
     100%{
         transform: translate(0,0);
-    }
-}
-@keyframes nobita-text {
-    0%{
-
-        opacity: 0;
-    }
-    100%{
- 
-        opacity: 1;
     }
 }
 
@@ -403,48 +419,18 @@ header{
     height: 100%;
 }
 
-.front-left{
+.front{
     width: 100%;
     height: 500px;
 }
-.front-left img{
+.front img{
     width: 100%;
     height: 100%;
     object-fit:contain;
 }
-.front-left-memo{
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-left: 37%;
-    padding-top: 35%;
-}
-.front-left-memo img{
-    width: 100%;
-    height: 100%;
-}
 
 
-.front-right{
-    width: 100%;
-    height: 500px;
-}
-.front-right img{
-    width: 100%;
-    height: 100%;
-    object-fit:contain;
-}
-.front-right-memo{
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-right: 37%;
-    padding-top: 35%;
-}
-.front-right-memo img{
-    width: 100%;
-    height: 100%;
-}
+
 .front-slider{
     width: 100%;
     height: 500px;
