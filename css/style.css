@@ -444,3 +444,31 @@ header{
     object-fit: cover;
 }
 
+.site-map{
+    width: 100%;
+}
+.site-map img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    transition: 0.6s;
+}
+.site-map img:hover{
+    transform: scale(1.1);
+}
+
+.site-map-left{
+    width: 30%;
+    float: left;
+}
+.site-map-right{
+    width: 70%;
+    float: left;
+}
+.site-map-right img{
+    width: 60%;
+    transition: 0.6s;
+}
+.site-map-right img:hover{
+    transform: scale(1.1);
+}
