@@ -439,6 +439,10 @@ a{
     height: 100%;
     object-fit:contain;
 }
+.border-box{
+    border-top: solid 1px gray;
+
+}
 
 
 
@@ -480,4 +484,130 @@ a{
 }
 .site-map-right img:hover{
     transform: scale(1.1);
+}
+.box-left{
+    width: 100%;
+    height: 500px;
+    border: solid 1px rgb(109, 97, 97);
+    text-align: center;
+}
+.box-left img{
+    width: 100%;
+    padding-top: 30%;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background: lightgray;
+}
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 5px;
+}
+.box-right{
+    width: 100%;
+    height: 500px;
+    border: solid 1px rgb(109, 97, 97);
+    text-align: left;
+    overflow-y: scroll;
+}
+
+.box-right img{
+    width: 45%;
+}
+
+.para1{
+    font-size: 30px;
+    font-weight: bold;
+    animation:
+    para1 1s;
+}
+@keyframes para1 {
+    0%{
+        transform: translate(0,100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+.para2{
+    font-size: 28px;
+    line-height: 1.5;
+    animation:
+    para2 3s;
+}
+@keyframes para2 {
+    0%{
+        transform: translate(0,400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+.para3{
+    font-size: 30px;
+    animation:
+    para3 4s;
+}
+@keyframes para3 {
+    0%{
+        transform: translate(0,400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+.para4{
+    font-size: 30px;
+    animation:
+    para4 3s;
+}
+@keyframes para4 {
+    0%{
+        transform: translate(0,400px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+#myBtn, #backTop {
+	position: fixed;
+	z-index: 99;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px;
+    font-weight: bold;
+    transition: 0.6s;
+}
+#myBtn{
+	bottom: 60px;
+	right: 10px;
+    opacity: 0.3;
+    background-color: #00cc00;
+    border-radius: 50%;
+    width: 80px;
+	height: 80px;
+    color: white;
+}
+#backTop {
+	bottom: 90px;
+	right: 100px;
+    width: 40px;
+	height: 40px;
+    color:black;
+    opacity: 0.7;
+    font-size: 40px;
+}
+
+#myBtn:hover {
+	background-color: #555;
+    opacity: 1;
 }
